@@ -1,0 +1,21 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# React Build Files
+/build
+
+# Environment Variables
+.env
+
+# Logs
+*.log
+
+# System Files
+.DS_Store
+
+# IDE Settings
+.vscode/
+*.sublime-project
+*.sublime-workspace
