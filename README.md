@@ -1,33 +1,11 @@
-🚗 EcoRide Carpooling System
-EcoRide is a full‑stack carpooling platform designed to reduce traffic congestion and promote sustainable commuting by connecting drivers with passengers headed in the same direction.
+```markdown
+# 🚗 EcoRide - Carpooling System
 
-📸 Screenshots
-You can view UI previews in the website-screenshots/ folder.
+EcoRide is a modern web-based carpooling system that connects riders and drivers for shared travel, aiming to reduce carbon emissions and ease traffic congestion.
 
-🛠️ Features
-🔍 Search for rides between cities
+## 📂 Folder Structure
 
-🚘 Drivers can offer rides and manage bookings
-
-📅 Passengers can book rides and leave reviews
-
-💳 Razorpay payment integration for secure transactions
-
-📊 Displays popular routes and cities
-
-💬 Feedback and review system
-
-🧩 Tech Stack
-Frontend
-HTML, CSS (Bootstrap), JavaScript
-
-Backend
-Node.js (Express), MySQL, Razorpay
-
-📂 Folder Structure
-bash
-Copy
-Edit
+```bash
 EcoRide/
 │
 ├── backend/
@@ -37,53 +15,97 @@ EcoRide/
 │
 ├── frontend/
 │   ├── assets/
-│   ├── search‑rides.html
-│   ├── popular‑routes.html
-│   ├── offer‑ride.html
+│   ├── search-rides.html
+│   ├── popular-routes.html
+│   ├── offer-ride.html
 │   └── review.html
 │
 ├── screenshots/
 ├── .gitignore
 ├── package.json
 └── README.md
-⚙️ Installation & Usage
-Clone the repository
+```
 
-bash
-Copy
-Edit
+---
+
+## 📸 Screenshots
+
+> UI previews and design flows are available in the `website-screenshots/` folder.
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. **Clone the Repository**
+
+```bash
 git clone https://github.com/webdev-Sameera/EcoRide-Carpooling-System.git
 cd EcoRide-Carpooling-System
-Setup backend
+```
 
-bash
-Copy
-Edit
+---
+
+### 2. **Backend Setup**
+
+```bash
 cd backend
 npm install
-node server.js
-Open the frontend
-Open any of the HTML files in frontend/ directly in your browser, or serve via Live Server.
+```
 
-💳 Payment Gateway (Razorpay)
-Set your Razorpay API keys in a .env file at the project root:
+#### 🔐 Environment Variables
 
-env
-Copy
-Edit
+Create a `.env` file inside `backend/` and add your Razorpay credentials:
+
+```ini
 RAZORPAY_KEY_ID=your_key
 RAZORPAY_KEY_SECRET=your_secret
-🧠 Future Enhancements
-Add authentication (JWT/Session)
+```
 
-Ride recommendation system
+---
 
-Responsive mobile‑first design
+### 3. **Run Backend**
 
-Live maps & location tracking
+```bash
+node server.js
+```
 
-🤝 Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+---
 
-📄 License
-This project is open‑source and available under the MIT License.
+### 4. **Frontend**
+
+Open any HTML file inside `frontend/` directly in a browser,  
+or use a **Live Server** extension in VSCode.
+
+---
+
+## 🛠 Database Setup
+
+- Configure your MySQL database inside backend files (e.g., `server.js`)
+- Create required tables for:
+  - `users`
+  - `rides`
+  - `bookings`
+  - `reviews`
+
+---
+
+## 📌 To-Do & Future Enhancements
+
+- Add user authentication (JWT)
+- Make UI fully responsive for mobile
+- Google Maps or live tracking integration
+- Email/SMS confirmations for bookings
+
+---
+
+## 🤝 Contributing
+
+Contributions, suggestions, and issues are welcome!  
+Please open a pull request or raise an issue for discussion.
+
+---
+
+## 📄 License
+
+MIT
+```
