@@ -100,6 +100,6 @@ RAZORPAY_KEY_SECRET=your_secret
 
 ## 📄 License
 
-This project is open‑source and available under the **MIT License**.
+None
 
 ---
